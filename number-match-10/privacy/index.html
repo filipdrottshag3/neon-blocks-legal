@@ -3,18 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
 <!--
-  PREPARED FOR THE AD-SUPPORTED iOS RELEASE (Option B). These pages are unpublished.
-  Do not merge this branch to main, and do not publish the pages, before that release is ready to go live.
-  GitHub Pages builds from main only.
-  When the ad-supported release is ready to go live, and only then, update both of the following together:
-  1. FILIP'S CHOICE — effective date: replace [[RELEASE DATE of the ad-supported version]] in the
-     visible "Last updated" line of this file with the calendar date these pages are published
-     (the GitHub Pages publish date). Recommendation: use that publish date, written in English
-     as "D Month YYYY". Do not invent or pre-fill a date before the pages go live. The visible
-     line stays a placeholder until then.
-  2. Remove <meta name="robots" content="noindex"> from this file and from number-match-10/support/index.html.
+  AD-SUPPORTED iOS RELEASE of Number Match: 10 (Option B), final text, ready to publish.
+  GitHub Pages builds from main only: these pages go live when this text reaches main.
+  The "Last updated" date in number-match-10/privacy/index.html is the planned publication date.
+  If the pages are published on a later day, change that one line to the actual publication date.
 -->
 <title>Number Match: 10 — Privacy Policy</title>
 <meta name="description" content="How the ad-supported iOS release of Number Match: 10 handles game data, advertising and privacy.">
@@ -41,7 +34,7 @@ table.wide td::before{content:attr(data-label);display:block;color:var(--muted);
 <body><main>
 <nav aria-label="Number Match: 10"><a href="/number-match-10/support/">Support</a><a href="/number-match-10/privacy/">Privacy Policy</a></nav>
 <h1>Privacy Policy — Number Match: 10</h1>
-<p>Last updated: [[RELEASE DATE of the ad-supported version]]</p>
+<p>Last updated: 25 November 2026</p>
 <h2>1. Who we are</h2>
 <p>Filip Drottshage, operating as ValleyTale Studios in Sweden, is the data controller for Number Match: 10 on iOS. For privacy questions, email <a href="mailto:valleytalestudios@gmail.com">valleytalestudios@gmail.com</a>.</p>
 <h2>2. Summary</h2>
@@ -57,14 +50,16 @@ table.wide td::before{content:attr(data-label);display:block;color:var(--muted);
 <tr><td>Current Classic, Adventure and Daily game</td><td>Resume your game</td></tr>
 <tr><td>Best score, level progress, stars, daily streak</td><td>Show your progress and unlock backgrounds</td></tr>
 <tr><td>Settings (sound, haptics, game speed, background)</td><td>Remember your choices</td></tr>
+<tr><td>Ad pacing and reward records (ad-supported release): when an ad was last shown and which rewards were granted</td><td>Space ads out and grant each rewarded video only once</td></tr>
+<tr><td>Whether you have answered Google's consent form or Privacy choices (ad-supported release)</td><td>Never show Apple's tracking prompt after such a choice</td></tr>
 <tr><td>A short local diagnostic log (app start, going to and from the background, errors)</td><td>Help you describe a problem if you contact support; it never leaves the device unless you send it to us</td></tr>
 </tbody>
 </table>
-<p>To protect your progress, the game keeps a second copy of these saves and settings in its own app storage on the same device. iOS may include app data in device backups according to your settings. To reset data in the installed app, open <strong>Settings → Delete game data</strong> and tap twice. The reset clears game data and its on-device backup. It does not modify existing iOS device backups. We do not keep a copy of this data, so it remains only on your device until you delete it there or delete the app.</p>
+<p>To protect your progress, the game keeps a second copy of these saves and settings in its own app storage on the same device. iOS may include app data in device backups according to your settings. To reset data in the installed app, open <strong>Settings → Delete game data</strong> and tap twice. The reset clears game data and its on-device backup. It keeps your advertising consent (stored on the device by Google's consent SDK) and the record that you made a privacy choice, so the app does not ask again. Change consent in <strong>Settings → Privacy choices</strong> (shown where Google's consent applies) and tracking in <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>. It does not modify existing iOS device backups. We do not keep a copy of this data, so it remains only on your device until you delete it there or delete the app.</p>
 <h2>4. Advertising (Google AdMob)</h2>
 <p>Advertising in the ad-supported release uses the Google Mobile Ads SDK (13.11.0) and the Google User Messaging Platform (UMP) SDK (3.1.0).</p>
 <h3>Where ads appear</h3>
-<p>The app shows full-screen interstitial ads at natural breaks: <strong>Game Over</strong> (after a lost board), <strong>Next Stage</strong> (after you clear a board), and immediately after the <strong>third successful Add</strong> of a stage (at most once on that stage). Cooldown and pacing decide whether an interstitial is shown at that break, so one does not appear every time. Leaving a game or restarting a game are not ad breaks. The app does not show banner ads or App Open ads.</p>
+<p>The app shows full-screen interstitial ads at natural breaks: <strong>Game Over</strong> (after a lost board), <strong>Next Stage</strong> (after you clear a board), and immediately after the <strong>third successful Add</strong> of a stage (at most once on that stage). Cooldown and pacing decide whether an interstitial is shown at that break, so one does not appear every time. Leaving or restarting a game in progress is not an ad break. The app does not show banner ads or App Open ads.</p>
 <p>You can choose to watch an optional rewarded video for <strong>+3 Hints</strong>, <strong>+3 Undo</strong>, or <strong>Continue after Game Over</strong>. The game grants that single reward only after Google confirms the video was completed. Closing the video early does not grant it.</p>
 <p>Ads and rewarded videos need a connection. Offline, every mode still works and the game shows no ads.</p>
 <h3>How ad requests are made</h3>
