@@ -3,9 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
+<!--
+  AD-SUPPORTED iOS RELEASE of Number Match: 10 (Option B). Published 25 November 2026 with the owner's
+  explicit approval. GitHub Pages builds from main. Update the "Last updated" line in
+  number-match-10/privacy/index.html whenever the text changes.
+-->
 <title>Number Match: 10 — Privacy Policy</title>
-<meta name="description" content="How Number Match: 10 handles game data and privacy.">
+<meta name="description" content="How the ad-supported iOS release of Number Match: 10 handles game data, advertising and privacy.">
 <style>
 :root{--bg:#fafaf8;--fg:#1a1a1a;--muted:#5c5c5c;--accent:#1a1a1a;--line:#dcdcd8}
 @media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#f4f4f2;--muted:#a8a8a4;--accent:#ffffff;--line:#333}}
@@ -15,44 +19,114 @@ h1{font-size:1.8em;line-height:1.2;color:var(--accent)}h2{margin-top:1.8em;font-
 a{color:var(--accent)}table{width:100%;border-collapse:collapse;margin:1em 0;font-size:.92em;display:block;overflow-x:auto}
 th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:color-mix(in srgb,var(--line) 45%,transparent)}
 nav{font-size:.95em;color:var(--muted)}nav a{margin-right:12px}
+@media (max-width:720px){
+table.wide{overflow-x:visible}
+table.wide thead{display:none}
+table.wide tbody,table.wide tr,table.wide td{display:block;width:auto}
+table.wide tr{border:1px solid var(--line);margin:0 0 12px}
+table.wide td{border:none;border-top:1px solid var(--line)}
+table.wide td:first-child{border-top:none}
+table.wide td::before{content:attr(data-label);display:block;color:var(--muted);font-size:.78em;font-weight:600}
+}
 </style>
 </head>
 <body><main>
 <nav aria-label="Number Match: 10"><a href="/number-match-10/support/">Support</a><a href="/number-match-10/privacy/">Privacy Policy</a></nav>
 <h1>Privacy Policy — Number Match: 10</h1>
-<p>Last updated: [[RELEASE DATE of the ad-supported version]]</p>
-<!-- PREPARED FOR THE AD-SUPPORTED VERSION. Do not merge to main (that publishes it) before that version is released.
-     Written for production choice A in the game repository's docs/production-ads.md §5 (no App Tracking Transparency
-     prompt; non-personalised ads). If choice B (ATT after consent) is taken, add to section 4: "On iPhone, the app may
-     also ask whether it may track you; you can change this in iOS Settings → Privacy & Security → Tracking." -->
+<p>Last updated: 25 November 2026</p>
 <h2>1. Who we are</h2>
 <p>Filip Drottshage, operating as ValleyTale Studios in Sweden, is the data controller for Number Match: 10 on iOS. For privacy questions, email <a href="mailto:valleytalestudios@gmail.com">valleytalestudios@gmail.com</a>.</p>
 <h2>2. Summary</h2>
-<p>Number Match: 10 is a free puzzle game funded by advertising. It has no account, no in-app purchases and no analytics of its own, and the game itself sends nothing to ValleyTale Studios. Ads are provided by Google AdMob and are not personalised. In the EEA, the UK and Switzerland, the app asks for your choice in Google's consent form before any ad is requested. The app does not ask for permission to track you.</p>
+<p>This privacy policy applies to the <strong>ad-supported iOS release</strong> of Number Match: 10. An ad-free build of the game does not include the advertising SDK: that build shows no ads and collects no data. On-device game saves, described in section 3, exist in both builds. Advertising in sections 4 and 6 applies only to the ad-supported release.</p>
+<p>The ad-supported release is a free puzzle game funded by advertising. It has no account, no in-app purchases and no analytics of its own, and the game itself sends nothing to ValleyTale Studios. Ads are provided by Google AdMob through the Google Mobile Ads SDK (13.11.0) and the Google User Messaging Platform (UMP) SDK (3.1.0), and they are requested as non-personalised. In the EEA, the UK and Switzerland, the app asks for your choice in Google's consent form before any ad is requested. The app never shows Apple's App Tracking Transparency prompt in those regions, and never accesses the advertising identifier (IDFA) there, whether you consent, decline or customise your choices. Ads may still appear as non-personalised ads (npa=1). On iPhone, Apple's tracking prompt is shown only where Google's consent form is not required and no consent or Privacy choices answer has ever been recorded on the device.</p>
 <h2>3. Game data on your device</h2>
-<p>The game stores the following on your device only, so you can continue where you left off:</p>
+<p>The game works fully offline. It stores the following on your device only, so you can continue where you left off. These saves do not need a connection, and the game itself does not send them to ValleyTale Studios or anyone else:</p>
 <table>
-<tr><th>Data</th><th>Why</th></tr>
+<thead>
+<tr><th scope="col">Data</th><th scope="col">Why</th></tr>
+</thead>
+<tbody>
 <tr><td>Current Classic, Adventure and Daily game</td><td>Resume your game</td></tr>
 <tr><td>Best score, level progress, stars, daily streak</td><td>Show your progress and unlock backgrounds</td></tr>
 <tr><td>Settings (sound, haptics, game speed, background)</td><td>Remember your choices</td></tr>
+<tr><td>Ad pacing and reward records (ad-supported release): when an ad was last shown and which rewards were granted</td><td>Space ads out and grant each rewarded video only once</td></tr>
+<tr><td>Whether you have answered Google's consent form or Privacy choices (ad-supported release)</td><td>Never show Apple's tracking prompt after such a choice</td></tr>
 <tr><td>A short local diagnostic log (app start, going to and from the background, errors)</td><td>Help you describe a problem if you contact support; it never leaves the device unless you send it to us</td></tr>
+</tbody>
 </table>
-<p>To protect your progress, the game keeps a second copy of these saves and settings in its own app storage on the same device. This data is not sent to us or anyone else. iOS may include app data in device backups according to your settings. To reset data in the installed app, open <strong>Settings → Delete game data</strong> and tap twice. The reset clears game data and its on-device backup. It does not modify existing iOS device backups.</p>
+<p>To protect your progress, the game keeps a second copy of these saves and settings in its own app storage on the same device. iOS may include app data in device backups according to your settings. To reset data in the installed app, open <strong>Settings → Delete game data</strong> and tap twice. The reset clears game data and its on-device backup. It keeps your advertising consent (stored on the device by Google's consent SDK) and the record that you made a privacy choice, so the app does not ask again. Change consent in <strong>Settings → Privacy choices</strong> (shown where Google's consent applies) and tracking in <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>. It does not modify existing iOS device backups. We do not keep a copy of this data, so it remains only on your device until you delete it there or delete the app.</p>
 <h2>4. Advertising (Google AdMob)</h2>
-<p>The game shows full-screen ads at natural breaks — after a lost or completed board, when you leave or restart a game, and at the third Add of a board — and optional rewarded videos that you choose to watch for three more hints, three more undos or one extra Add. A reward is only given when Google reports that the video was watched.</p>
-<p>To deliver, limit how often you see the same ad, measure and protect ads against fraud, Google's Mobile Ads SDK processes, as Google describes it: an app- or developer-scoped device identifier (not the advertising identifier, which the app never asks for), advertising data such as ads you have seen, product interaction such as app launches and video views, performance and crash diagnostics, and coarse location derived from your IP address. Google processes this data under its own responsibility; see <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
-<p>We request non-personalised ads. Non-personalised ads are not based on your past behaviour, but still use identifiers for frequency capping, aggregated reporting and fraud prevention.</p>
+<p>Advertising in the ad-supported release uses the Google Mobile Ads SDK (13.11.0) and the Google User Messaging Platform (UMP) SDK (3.1.0).</p>
+<h3>Where ads appear</h3>
+<p>The app shows full-screen interstitial ads at natural breaks: <strong>Game Over</strong> (after a lost board), <strong>Next Stage</strong> (after you clear a board), and immediately after the <strong>third successful Add</strong> of a stage (at most once on that stage). Cooldown and pacing decide whether an interstitial is shown at that break, so one does not appear every time. Leaving or restarting a game in progress is not an ad break. The app does not show banner ads or App Open ads.</p>
+<p>You can choose to watch an optional rewarded video for <strong>+3 Hints</strong>, <strong>+3 Undo</strong>, or <strong>Continue after Game Over</strong>. The game grants that single reward only after Google confirms the video was completed. Closing the video early does not grant it.</p>
+<p>Ads and rewarded videos need a connection. Offline, every mode still works and the game shows no ads.</p>
+<h3>How ad requests are made</h3>
+<p>Interstitial and rewarded ads are requested as non-personalised (npa=1). Before the Google Mobile Ads SDK is initialised, the app turns Publisher First-Party ID off. Turning that identifier off does not stop the processing described below. Non-personalised ads are not based on your past behaviour. They still process device identifiers for frequency capping, aggregated ad reporting, measurement and fraud prevention.</p>
+<h3>Permission to track on iPhone</h3>
+<p>Apple's App Tracking Transparency (ATT) prompt is shown only where Google's consent form is not required and no consent or Privacy choices answer has ever been recorded on the device. In the EEA, the UK and Switzerland, or anywhere you have already answered Google's consent form or Privacy choices, the app never shows the ATT prompt and never accesses the advertising identifier (IDFA). Where the prompt is shown, it appears so Google can measure ads and limit repeats. If you allow tracking, Google's SDK may access the IDFA for ad measurement, frequency capping and fraud prevention. Number Match: 10 itself never reads or stores the IDFA. If you decline or restrict tracking, or if the prompt is not shown, the game remains fully playable. Ads may still appear as non-personalised ads (npa=1). You can change or revoke tracking permission at any time in <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>.</p>
+<h3>Data the advertising SDKs process</h3>
+<p>The types below match the privacy manifests shipped with Google Mobile Ads SDK 13.11.0 and Google User Messaging Platform SDK 3.1.0, which we inspected in the official 13.11.0 and 3.1.0 SDK packages. ValleyTale Studios does not receive or store this SDK data. Google and its advertising partners, listed in the consent form, process it under their own policies. The list of partners is set by that form and can change; this policy does not state a fixed number of partners. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>, <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, and Google's <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">App Store data disclosure for the Mobile Ads SDK</a>.</p>
+<p>The Google Mobile Ads SDK 13.11.0 privacy manifest already declares coarse location as collected and linked to you, and not used to track you. Google's disclosure also includes coarse location derived from the IP address, which does not require a location permission. Number Match: 10 does not ask for location permission, does not use the device's GPS or Approximate Location Services, and does not collect precise location from the device. Google's consent form includes a standard sentence that we and our partners may use precise geolocation data; that wording is part of Google's form and is not a setting this app can turn off. This app still does not request or collect device precise location. Any partner processing is described in the consent form and in those partners' own policies. From version 13.12.0, Google's SDK can also collect approximate location from the device if an app already has location permission; this app stays on 13.11.0 and would review its privacy labels and this policy before any SDK upgrade.</p>
+<table class="wide">
+<thead>
+<tr><th scope="col">Data</th><th scope="col">Linked to you</th><th scope="col">Used to track you</th><th scope="col">Purposes</th></tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Data">Device ID, including the advertising identifier (IDFA) when you allow tracking where Apple's tracking prompt is shown, and app- or developer-scoped device identifiers</td>
+<td data-label="Linked to you">Yes</td>
+<td data-label="Used to track you">Yes. The Google Mobile Ads SDK declares Device ID as Used to Track You</td>
+<td data-label="Purposes">Third-Party Advertising, Developer's Advertising or Marketing, and Analytics</td>
+</tr>
+<tr>
+<td data-label="Data">Advertising Data: ads you have seen and interacted with</td>
+<td data-label="Linked to you">Yes</td>
+<td data-label="Used to track you">No</td>
+<td data-label="Purposes">Third-Party Advertising, Developer's Advertising or Marketing, and Analytics</td>
+</tr>
+<tr>
+<td data-label="Data">Product Interaction: app launches, and ad and video interactions</td>
+<td data-label="Linked to you">Yes. The Google Mobile Ads SDK links this data to you. The User Messaging Platform SDK processes product interaction for app functionality and does not link it to you</td>
+<td data-label="Used to track you">No</td>
+<td data-label="Purposes">Third-Party Advertising, Developer's Advertising or Marketing, Analytics, and App Functionality (User Messaging Platform)</td>
+</tr>
+<tr>
+<td data-label="Data">Approximate (coarse) location, including location derived from your IP address. The app never asks for location permission and does not collect precise location or use the device's GPS or Approximate Location Services. Partners may process location only as described in the consent form and their own policies</td>
+<td data-label="Linked to you">Yes. The Google Mobile Ads SDK links this data to you. The User Messaging Platform SDK processes coarse location for app functionality and does not link it to you</td>
+<td data-label="Used to track you">No</td>
+<td data-label="Purposes">Third-Party Advertising, Developer's Advertising or Marketing, Analytics, and App Functionality (User Messaging Platform)</td>
+</tr>
+<tr>
+<td data-label="Data">Performance Data</td>
+<td data-label="Linked to you">No</td>
+<td data-label="Used to track you">No</td>
+<td data-label="Purposes">Third-Party Advertising, Developer's Advertising or Marketing, Analytics, and App Functionality (User Messaging Platform)</td>
+</tr>
+<tr>
+<td data-label="Data">Crash Data</td>
+<td data-label="Linked to you">No</td>
+<td data-label="Used to track you">No</td>
+<td data-label="Purposes">Analytics only. Declared by the Google Mobile Ads SDK for Analytics</td>
+</tr>
+<tr>
+<td data-label="Data">Other Diagnostic Data</td>
+<td data-label="Linked to you">No</td>
+<td data-label="Used to track you">No</td>
+<td data-label="Purposes">Third-Party Advertising, Developer's Advertising or Marketing, and Analytics</td>
+</tr>
+</tbody>
+</table>
 <h3>Legal basis and your choices</h3>
-<p>In the EEA, the UK and Switzerland, ads are requested only after you have made a choice in Google's consent form (consent under GDPR Art. 6(1)(a) and the rules on storing or reading information on your device). If you do not consent, the app may show no ads or only limited ads; the game remains fully playable either way. You can change or withdraw your choice at any time in the app under Settings → Privacy choices.</p>
+<p>In the EEA, the UK and Switzerland, the app shows Google's User Messaging Platform consent form and waits for your choice before any ad request. The app never shows the App Tracking Transparency prompt in those regions, whether you consent, decline or customise your choices, and it never accesses the IDFA there. The legal basis is your consent under GDPR Art. 6(1)(a) and the ePrivacy rules on storing or reading information on your device. If you decline, the game remains fully playable. The app requests an ad only when Google's consent result allows it; depending on that result, you may see no ads, or only limited non-personalised ads (npa=1). You can change or withdraw your consent at any time in the app under <strong>Settings → Privacy choices</strong>. After any choice in the consent form or Privacy choices, the tracking prompt is never shown, including on later launches or if you later travel to a region where Google's consent form is not required. Withdrawing consent applies to later ad requests.</p>
 <h3>Transfers and retention</h3>
-<p>Google may process data outside the EEA under its own safeguards, such as standard contractual clauses. Google decides how long it keeps advertising data, as described in its policies. ValleyTale Studios does not receive or store this data.</p>
+<p>Google may process advertising data outside the EEA, the UK and Switzerland, including in the United States, under its own safeguards, such as standard contractual clauses. Google decides how long it keeps that data, as described in its policies. ValleyTale Studios does not receive or store it and does not set a retention period for it. Deleting game data in the app, or deleting the app, removes the on-device saves described in section 3. It does not delete data Google already holds; for that data, use Google's own tools or contact Google.</p>
 <h2>5. If you contact us</h2>
-<p>If you email us, we use your email address and what you send only to answer your request. The legal basis is our legitimate interest in providing support (GDPR Art. 6(1)(f)). Our support mailbox is hosted by Google. Contact us if you have questions about a support message or want to request its deletion.</p>
+<p>If you email us, we use your email address and what you send only to answer your request. The legal basis is our legitimate interest in providing support (GDPR Art. 6(1)(f)). We keep a support message only as long as needed to handle your request. Our support mailbox is hosted by Google, which may process it outside the EEA under its own safeguards, such as standard contractual clauses. Contact <a href="mailto:valleytalestudios@gmail.com">valleytalestudios@gmail.com</a> if you have questions about a support message or want to request its deletion.</p>
 <h2>6. Children</h2>
-<p>The game is suitable for all ages but is not directed at children. Ads are requested as non-personalised.</p>
+<p>The game is not directed at children and is not a children's service. Ads are requested as non-personalised and are not tagged as child-directed.</p>
 <h2>7. Your rights</h2>
-<p>Under the GDPR you may request access to, correction, deletion, restriction or portability of personal data we hold about you, and object to processing. The app sends us nothing, so this normally concerns emails you have sent us; for data Google processes for advertising, you can also use Google's own tools and contact Google. Contact <a href="mailto:valleytalestudios@gmail.com">valleytalestudios@gmail.com</a>. You can also complain to your local data protection authority or the <a href="https://www.imy.se/en/">Swedish Authority for Privacy Protection (IMY)</a>.</p>
+<p>Under the GDPR you have the right of access, rectification, erasure, restriction of processing and data portability, and the right to object to processing. Where processing is based on consent, you may withdraw that consent at any time. Withdrawal does not affect processing that took place before you withdrew it. You can withdraw advertising consent in the app under <strong>Settings → Privacy choices</strong>, and you can change tracking permission in <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>. The app sends ValleyTale Studios nothing from gameplay, so a request to us normally concerns emails you have sent us. For data Google processes for advertising, you can also use Google's own tools and contact Google. To use these rights with us, email <a href="mailto:valleytalestudios@gmail.com">valleytalestudios@gmail.com</a>. You also have the right to complain to a local supervisory authority or to the <a href="https://www.imy.se/en/">Swedish Authority for Privacy Protection (IMY)</a>.</p>
 <h2>8. Changes</h2>
 <p>If we change how the app processes personal data, we will update this policy and the date above before that version is released, and ask for your consent in the app where the law requires it.</p>
 </main></body></html>
